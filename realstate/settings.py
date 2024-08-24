@@ -6,16 +6,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-x+(l$dng_j)miea_x6!+jto7-p_j*ct8p4wh_)(weyr&qk(-jm'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "api.nyumbakumi.net",
     "127.0.0.1"
 ]
+CORS_ALLOWED_ORIGINS = [
+    'https://api.nyumbakumi.net',
+]
 
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'corsheaders',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
