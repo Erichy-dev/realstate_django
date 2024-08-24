@@ -12,10 +12,10 @@ ALLOWED_HOSTS = [
     "api.nyumbakumi.net",
     "127.0.0.1"
 ]
-CORS_ALLOWED_ORIGINS = [
-    'https://api.nyumbakumi.net',
-]
-
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = ['https://api.nyumbakumi.net']
+CSRF_COOKIE_DOMAIN = 'api.nyumbakumi.net'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
