@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-x+(l$dng_j)miea_x6!+jto7-p_j*ct8p4wh_)(weyr&qk(-jm'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "api.nyumbakumi.net",
@@ -100,6 +100,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_DIR = "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
